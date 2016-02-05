@@ -1,0 +1,31 @@
+<body id ="newBody">
+<h1>CREATING A NEW PERSON</h1>
+
+<%= form_for @person do |f| %>
+    <div id = "nameField">
+    <%= f.label :name %>
+    <%= f.text_area :name %><br/>
+    </div>
+    
+    <div id = "weightField">
+    <%= f.label :weight %>
+    <%= f.text_area :weight %><br/>
+    </div>
+    
+    <div id = "heightField">
+    <%= f.label :height %>
+    <%= f.text_area :height %><br/>
+    </div>
+    
+    <div id = "colorField">
+    <%= f.label :color %>
+    <%= f.text_area :color %><br/>
+    </div>
+    
+    <div id = "submitBut">
+    <%= f.submit "SUBMIT" %>
+    </div>
+
+<% end %>
+
+</body>

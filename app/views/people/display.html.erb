@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<h1>DISPLAY</h1>
+        
+<% @person.each do |person| %>
+<svg width="200" height="200">
+    <rect width="<%= person.weight %>" height="<%= person.height %>" style= "fill:<%= person.color %>;stroke-width:2;stroke:black" />
+</svg>
+<% end %>
+
+</html>

@@ -1,0 +1,27 @@
+<body id = "showBody">
+<h1> SHOWING </h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @person.weight %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @person.height %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @person.color %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person), class: "editButton"%> |
+<%= link_to 'Back', people_path, class: "backButton"%>
+
+</body>
