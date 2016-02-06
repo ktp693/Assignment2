@@ -33,13 +33,19 @@ table, td{
 }
 
 .newUser{
-    position:fixed;
-    top:300px;
-    right:865px;
-    
-    
+
     font-weight:bold;
     font-size:125%;
+}
+#displayBody{
+    position:relative;
+    top:900px;
+
+ 
+}
+#divider{
+    position:relative;
+    top:800px;
 }
 
 /*NEW PAGE*/

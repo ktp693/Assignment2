@@ -1,6 +1,7 @@
 <body id = "indexBody">
 <h1>LISTING PEOPLE</h1>
 
+<%= link_to "ADD SOMEONE NEW", new_person_path, class: "newUser" %>
 
 
 <table id = "table">
@@ -27,15 +28,22 @@
             <td> <%= link_to "Destroy", person, method: :delete %> </td>
             <td> <%= link_to "Show", person_path(person) %> </td>
             <td> <%= link_to "Edit", edit_person_path(person) %> </td>
-            
         </tr>
         <% end %>
     </tbody>
 </table>
 
+<h2 id = "divider">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h2>
+<div id = "displayBody">
+    <% @person.each do |person| %>
+        <svg width="200" height="200">
+            <rect x ="0" y ="0" rx="20" ry="20" width="<%= person.weight %>" height="<%= person.height %>" style= "fill:<%= person.color %>;stroke-width:2;stroke:black" />
+             <text x= "0" y ="20" font-family="Verdana" font-size="20" fill="pink" ><%= person.name %></text>    
+        </svg>
+    <% end %>
+</div>
 <br>
 
-<%= link_to "ADD SOMEONE NEW", new_person_path, class: "newUser" %>
 
 
 </div>
