@@ -12,19 +12,13 @@ class PeopleController < ApplicationController
         @person = Person.find(params[:id])
     end
     
-
-    
     def new
         @person = Person.new
     end
     
-
-    
     def edit
         @person = Person.find(params[:id])
     end
-    
-
     
     def update
         @person = Person.find(params[:id])
@@ -47,7 +41,6 @@ class PeopleController < ApplicationController
     end
     
 
-    
     def destroy
         @person = Person.find(params[:id])
         @person.destroy
